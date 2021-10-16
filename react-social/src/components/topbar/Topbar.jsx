@@ -9,15 +9,17 @@ export default function Topbar() {
             <span className="logo">social</span>
        </div>
         <div className="topbarCenter">
-            <Search />
+            <div className="searchbar">
+            <Search className="searchIcon"/>
             <input placeholder="Search for friends, post or video" className="searchInput"></input>
+             </div>
        </div>
         <div className="topbarRight">
             <div className="topbarLinks">
                 <span className="topbarLink">HomePage</span>
                 <span className="topbarLink">Timeline</span>
             </div>
-            <div className="topbarIcon">
+            <div className="topbarIcons">
                 <div className="topbarIconItem">
                     <Person />
                     <span className="topbarIconBadge">1</span>
