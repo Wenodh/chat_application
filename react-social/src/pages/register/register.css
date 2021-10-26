@@ -20,12 +20,13 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .loginLogo {
     font-size: 50px;
     font-weight: 800;
     color: #1877;
     margin-bottom: 10px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 .loginDesc {
@@ -35,7 +36,7 @@
 
 .loginBox {
     max-width: 400px;
-    height: 300px;
+    height: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -61,6 +62,7 @@
     border-radius: 10px;
     border: none;
     background-color: rgba(3, 78, 67, 0.541);
+    color: white;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
@@ -81,4 +83,5 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+    color: white;
 }
