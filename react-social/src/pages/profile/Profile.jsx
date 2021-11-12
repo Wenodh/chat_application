@@ -1,15 +1,17 @@
+import './profile.css';
 import Topbar from '../../components/topbar/Topbar.jsx';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import Feed from '../../components/feed/Feed.jsx';
 import Rightbar from '../../components/rightbar/Rightbar.jsx';
-import './profile.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
+
 export default function Profile() {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     const [user, setUser] = useState({});
     const username = useParams().username;
+
     useEffect(() => {
         const fetchUser = async () => {
             const res = await axios.get(`/users?username=${username}`);
@@ -17,6 +19,7 @@ export default function Profile() {
         };
         fetchUser();
     }, [username]);
+
     return (
         <>
             <Topbar />
